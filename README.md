@@ -1,0 +1,2 @@
+# PalindroneCheckerApp
+To check palindrone 

@@ -1,22 +1,32 @@
-// UseCase3PalindromeCheckerApp.java
-// UC3: Palindrome Check Using String Reverse
-class UseCase3PalindromeCheckerApp {
+// UseCase5PalindromeCheckerApp.java
+// UC5: Stack-Based Palindrome Checker
+
+import java.util.Stack;
+class UseCase5PalindromeCheckerApp {
 
     // main method: entry point of the application
     public static void main(String[] args) {
 
         // Hardcoded string to check
-        String word = "level";
+        String word = "racecar";
 
         System.out.println("=======================================");
-        System.out.println("   Palindrome Checker App - UC3        ");
+        System.out.println("   Palindrome Checker App - UC5        ");
         System.out.println("=======================================");
         System.out.println("Checking word: " + word);
 
-        // Reverse string using loop
+        // Create a stack of characters
+        Stack<Character> stack = new Stack<>();
+
+        // Push characters into stack
+        for (int i = 0; i < word.length(); i++) {
+            stack.push(word.charAt(i));
+        }
+
+        // Pop characters to build reversed string
         String reversed = "";
-        for (int i = word.length() - 1; i >= 0; i--) {
-            reversed = reversed + word.charAt(i);  // string concatenation
+        while (!stack.isEmpty()) {
+            reversed = reversed + stack.pop();
         }
 
         // Compare original and reversed

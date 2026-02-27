@@ -52,6 +52,15 @@ The development process followed these steps:
     - Class, `main()` method, `static` keyword, console output, flow control.
 
 #### UC2: Print a Hardcoded Palindrome Result 
+- Use Case ID: UC2
+- Title: Print a Hardcoded Palindrome Result
+- Actor: User
+- Goal: Display whether a hardcoded string is a palindrome.
+- Flow:
+- Program starts.
+- A hardcoded string (e.g., "madam") is checked.
+- Result is printed to the console.
+- Program exits.
 
 #### UC3: Palindrome Check Using String Revers
 
